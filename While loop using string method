@@ -1,0 +1,17 @@
+# Induction-assignment
+package Day02Assignment;
+
+public class ClassC
+{
+    public static void main(String[] args)
+    {
+        String s = "i am java developer";
+        String s1="";
+       int i=s.length();
+       while(i>0)
+       {
+           System.out.print(s.charAt(i-1));
+           i--;
+       }
+    }
+}
