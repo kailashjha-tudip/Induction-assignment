@@ -1,0 +1,22 @@
+# Induction-assignment
+package Day02Assignment;
+
+public class ClassF
+{
+    static int x=10; //static variable in java like a global variable
+    public void Run()
+    {
+        x++;
+
+    }
+    public static void main(String[] args)
+    {
+        ClassF aobj=new ClassF();
+        ClassF aobj1=new ClassF();
+        aobj.Run();
+        aobj1.Run();
+        System.out.println(aobj.x);
+        System.out.println(aobj1.x);
+
+    }
+}
