@@ -1,0 +1,26 @@
+package Day04Assignment;
+
+public class NullPointerExceptions
+{
+    public static void main (String[] args)
+    {
+        // Initializing String variable with null value
+        String str = null;
+
+
+        try
+        {
+            // This line of code throws NullPointerException
+            // because str is null
+            if (str.equals("gfg"))
+                System.out.print("Same");
+            else
+                System.out.print("Not Same");
+        }
+        catch(NullPointerException e)
+        {
+            System.out.print("NullPointerException Caught");
+        }
+    }
+}
+
