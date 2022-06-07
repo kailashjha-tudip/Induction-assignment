@@ -1,0 +1,24 @@
+# Induction-assignment
+package Day02Assignment;
+
+public class ClassD
+{
+    public static void main(String[] args)
+    {
+        String language ="java";
+        switch (language){
+            case "java":
+                System.out.println(language+"java is famus programing language");
+                break;
+            case "python":
+                System.out.println(language+"python is easy programming language");
+                break;
+            case "javaScript":
+                System.out.println(language+"javaScript is famus for fronted");
+                break;
+            default:
+                System.out.println(language+"not found record");
+        }
+
+    }
+}
