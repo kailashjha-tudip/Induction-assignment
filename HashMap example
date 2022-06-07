@@ -1,0 +1,52 @@
+package Day03Assignment;
+import javax.swing.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class ClassC
+{
+    public void run()
+    {
+        System.out.println("Implementing hashmap");
+        HashMap<Integer,String> map=new HashMap<>();
+        map.put(101,"java");
+        map.put(null,null);
+        map.put(103,"HTML");
+        map.put(101,"java");
+        System.out.println(map);
+        System.out.println("======================HashMap================");
+       //iterator through keys only
+        System.out.print("keys ");
+        for (Integer key : map.keySet())
+        {
+            System.out.print(key);
+            System.out.print(" ,");
+        }
+        //iterator through values only
+        System.out.print("\nValues:");
+        for (String value : map.values())
+        {
+            System.out.print(value);
+            System.out.print(" ,");
+
+        }
+        //iterator through key/value only
+        System.out.println("\nEntries:");
+       for (Map.Entry m:map.entrySet())
+        {
+            System.out.print(m.getKey()+" "+ m.getValue());
+            System.out.println("  ");
+        }
+
+    }
+
+    public static void main(String[] args)
+    {
+       ClassC aobj=new ClassC();
+       aobj.run();
+        System.out.println("Main method End");
+
+    }
+}
+
