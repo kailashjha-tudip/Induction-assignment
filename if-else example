@@ -1,0 +1,25 @@
+package Day02Assignment;
+
+import java.util.Scanner;
+
+public class ClassA
+{
+    public static void main(String[] args)
+    {
+        System.out.println("please entre the number");
+        Scanner sc=new Scanner(System.in);
+      int number= sc.nextInt();
+
+        if(number>0)
+        {
+            System.out.println("The number is positive number:");
+        }
+        else
+        {
+            System.out.println("the number is not positive number");
+        }
+        System.out.println("statement out side of if-else block");
+
+    }
+}
+
