@@ -1,0 +1,19 @@
+# Induction-assignment
+package Day02Assignment;
+
+public class ClassE {
+    public void Display()
+    {
+        int a=10;//local variable
+        int b=20;
+        int c=a+b;
+        System.out.println("display meth executed");
+        System.out.println(c);
+    }
+    public static void main(String[] args) {
+        System.out.println("main method executed ");
+        ClassE aobj=new ClassE();
+        aobj.Display();
+    }
+}
+
